@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './new-on-the-site.component.html',
   styleUrls: ['./new-on-the-site.component.css']
 })
-export class NewOnTheSiteComponent implements OnInit {
+export class NewOnTheSiteComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+heading: string = "new on the site";
+ x: number = 15.45;
 }
