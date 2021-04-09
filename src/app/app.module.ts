@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule  } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -12,9 +15,15 @@ import { LatesUpdatesComponent } from './homepage/lates-updates/lates-updates.co
 import { CatalogpageComponent } from './catalogpage/catalogpage.component';
 import { SearchFormComponent } from './catalogpage/search-form/search-form.component';
 import { NewspageComponent } from './newspage/newspage.component';
-import { RandomAnimePageComponent } from './random-anime-page/random-anime-page.component';
-import { LoginComponent } from './header/login/login.component';
-
+import { ConverterPipe } from './pipes/converter.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PostComponent } from './newspage/post/post.component';
+import { ProductComponent } from './product/product.component';
+import { AuthGuardService } from './route-guards/auth-guard.service';
+import { LoginComponent } from './login/login.component';
+import { ProductService } from './services/product.service';
+import { AuthService } from './services/auth.service';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -28,15 +37,23 @@ import { LoginComponent } from './header/login/login.component';
     CatalogpageComponent,
     SearchFormComponent,
     NewspageComponent,
-    RandomAnimePageComponent,
     LoginComponent,
+    ConverterPipe,
+    PostComponent,
+    ProductComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthGuardService,AuthService, ProductService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
 

@@ -1,13 +1,13 @@
 <div class="absolute">
-    <h4>Latest updates</h4>
+    <h2>Latest updates</h2>
 
     <table  [ngStyle]="{'font-family':'Monospace'}">
-      <tbody *ngFor="let item of mydate">
-      <tr *ngFor="let update of updates; let i = index; let first = first; let last = last; let even = even; let odd = odd">
-        <td><img [src]="update.imageUrl" /> </td>
-        <td>{{update.name}} <br> {{update.episode}}<br> <div *ngFor="let item of mydate">{{item | date:'yyyy-MM-dd hh:mm'}} </div> </td>
+      <tbody>
+      <tr *ngFor="let update of updates;">
+        <td><img [src]="update.imageUrl"> </td>
+        <td>{{update.name}} <br> {{update.episode}} </td>
         </tr>
-      </tbody>
+       </tbody>
     </table>
 </div>
 

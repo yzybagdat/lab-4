@@ -1,34 +1,12 @@
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-<h1 style="margin-top:40px;">We recommend to look</h1>
+<h1 style="margin-top:40px;">{{heading | uppercase}}</h1>
 <div class="hero-section">
-  <div class="card-grid">
+  <div class="card-grid" *ngFor="let card of cards;">
     <a class="card" href="#">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+      <div class="card__background"><img [src]="card.imageUrl"> </div>
       <div class="card__content">
-        <p class="card__category">Category</p>
-        <h3 class="card__heading">Example Card Heading</h3>
-      </div>
+        <div class="text">
+          <p class="card__category">{{card.name}}</p>
+          <p class="card__heading">{{card.rating}}</p>
+        </div></div>
     </a>
-    <a class="card" href="#">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-      <div class="card__content">
-        <p class="card__category">Category</p>
-        <h3 class="card__heading">Example Card Heading</h3>
-      </div>
-    </a>
-    <a class="card" href="#">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-      <div class="card__content">
-        <p class="card__category">Category</p>
-        <h3 class="card__heading">Example Card Heading</h3>
-      </div>
-    </a>
-    <a class="card" href="#">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-      <div class="card__content">
-        <p class="card__category">Category</p>
-        <h3 class="card__heading">Example Card Heading</h3>
-      </div>
-    </a>
-
   </div></div>

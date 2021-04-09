@@ -4,16 +4,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CatalogpageComponent } from './catalogpage/catalogpage.component';
 import { NewspageComponent } from './newspage/newspage.component';
-import { RandomAnimePageComponent } from './random-anime-page/random-anime-page.component';
-import { LoginComponent } from './header/login/login.component';
+import { ProductComponent} from './product/product.component'
+import { AuthGuardService } from './route-guards/auth-guard.service';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register.component';
+import { DeactivateGuard } from './decativate.guard';
 
 const routes: Routes = [
  { path: '', component: HomepageComponent },
-    { path: 'login', component: LoginComponent },
+    { path: 'login', component:LoginComponent},
     { path: 'catalogpage', component: CatalogpageComponent },
     { path: 'newspage', component: NewspageComponent },
-    { path: 'random-anime-page', component: RandomAnimePageComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent, canDeactivate:[DeactivateGuard] },
+    { path: 'product', component: ProductComponent, canActivate : [AuthGuardService] },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
