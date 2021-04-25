@@ -1,0 +1,19 @@
+<div *ngIf="this.subscribeEditors.length == 0 && this.editors.length == 0">
+  <h2 [style]="{'text-align': 'center'}">Your list is empty</h2>
+</div>
+
+<div *ngIf="this.editors.length !== 0">
+  <h2>My</h2>
+
+  <div class="flex">
+    <app-editorials-list-card [routerLink]="['/editorial', editor.id]" *ngFor="let editor of editors" [editor]="editor"></app-editorials-list-card>
+  </div>
+</div>
+
+<div *ngIf="this.subscribeEditors.length !== 0">
+  <h2>Subscribe </h2>
+
+  <div class="flex">
+    <app-editorials-list-card [routerLink]="['/editorial', subEditor.id]" *ngFor="let subEditor of subscribeEditors" [editor]="subEditor"></app-editorials-list-card>
+  </div>
+</div>

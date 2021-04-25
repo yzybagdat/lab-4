@@ -1,0 +1,45 @@
+<main>
+  <div class="wrapper">
+    <div class="sign-up-box">
+      <h1>Sign up in to NeKorem</h1>
+
+      <div class="sign-up-body">
+        <h2>Log up</h2>
+        <div class="form-body">
+          <form [formGroup]="signUpForm" (ngSubmit)="submit()">
+
+            <input type="text" formControlName="login" placeholder="Login" required>
+            <p *ngIf="_login.invalid && (_login.touched || _login.dirty)">
+              <span *ngIf="_login.errors?.required">Field is required</span>
+            </p>
+
+            <input type="text" formControlName="firstName" placeholder="First Name" required>
+            <p *ngIf="_firstName.invalid && (_firstName.touched || _firstName.dirty)">
+              <span *ngIf="_firstName.errors?.required">Field is required</span>
+            </p>
+
+            <input type="text" formControlName="lastName" placeholder="Last Name" required>
+            <p *ngIf="_lastName.invalid && (_lastName.touched || _lastName.dirty)">
+              <span *ngIf="_lastName.errors?.required">Field is required</span>
+            </p>
+
+            <input type="password" formControlName="password" placeholder="Password" required>
+            <p *ngIf="_password.invalid && (_password.touched || _password.dirty)">
+              <span *ngIf="_password.errors?.required">Field is required</span>
+            </p>
+
+            <input type="password" formControlName="password2" placeholder="Password" required>
+            <p *ngIf="_password2.invalid && (_password2.touched || _password2.dirty)">
+              <span *ngIf="_password2.errors?.required">Field is required</span>
+            </p>
+            <p *ngIf="!isPasswordsEqual()">Passwords not equals</p>
+            <p *ngIf="usedLogin === 'true'">Already exists</p>
+
+            <button type="submit" [disabled]="blockForm">Sign in</button>
+          </form>
+        </div>
+      </div>
+      <a routerLink="/login">Have a account</a>
+    </div>
+  </div>
+</main>

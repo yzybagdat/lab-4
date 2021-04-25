@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  app-card {
+    width: 300px;
+  }
+}
+
+
+

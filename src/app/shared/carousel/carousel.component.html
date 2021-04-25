@@ -1,0 +1,87 @@
+<div class="carousel">
+
+  <div class="movie-genre" [routerLink]="[url, genre]">
+    <h2>{{genre | firstCharToUppercase}}</h2>
+  </div>
+
+  <div class="flex">
+    <app-carousel-card [style]="{'margin-right': '30px'}" *ngFor="let movie of movies" [movie]="movie" [click]="(movie === lastShowMovie)" (click)="onClickMovieCarouselCard(movie)"></app-carousel-card>
+  </div>
+
+  <div class="movies-details" *ngIf="showMovieDetail">
+
+    <img [ngClass]="{'blur': detailsClick}" class="bg-img" src="{{lastShowMovie.imgBigSrc}}" alt="">
+
+    <div class="content-details">
+      <div class="details-title">
+        <button [ngClass]="{'clickBtn': !aboutClick }" (click)="aboutBtnClick()">О фильме</button>
+        <button [ngClass]="{'clickBtn': !detailsClick }" (click)="detailsBtnClick()">Детали</button>
+        <button class="close-details-page" (click)="closeDetail()">X</button>
+      </div>
+
+      <div class="movie-about-data" *ngIf="aboutClick">
+        <img class="img" [src]="lastShowMovie.imgNameSrc" alt="">
+        <p [ngStyle]="{'font-size': '16px'}">
+          <span [ngStyle]="{'color': setRating(lastShowMovie.rating)}">{{lastShowMovie.rating}}</span>
+          <span> {{lastShowMovie.date}},</span>
+          <span> {{lastShowMovie.genres | appendStrings: ','}} </span>
+          <span>{{lastShowMovie.timeHour}}</span>
+        </p>
+        <p class="movie-title1">{{lastShowMovie.text}}</p>
+
+        <div class="btns-box">
+          <button class="watch-movie" *ngIf="lastShowMovie.discount === 100" [routerLink]="[url, lastShowMovie.id]">
+            <mat-icon>play_arrow</mat-icon>
+            <span>Watch</span>
+          </button>
+          <button class="watch-movie" *ngIf="lastShowMovie.discount !== 100" (click)="doPay(lastShowMovie)">
+            <mat-icon>payments</mat-icon>
+            <span>Pay</span>
+          </button>
+          <button class="action-btns" (click)="addToFa(lastShowMovie.id)">
+            <mat-icon *ngIf="!clickAdd">bookmark</mat-icon>
+            <mat-icon *ngIf="clickAdd">done</mat-icon>
+          </button>
+<!--          <button class="action-btns">-->
+<!--            <mat-icon>videocam</mat-icon>-->
+<!--          </button>-->
+        </div>
+      </div>
+
+      <div class="movie-about-data width-sz" *ngIf="detailsClick">
+        <div [ngStyle]="{'width': '642px', 'margin-top': '80px'}">
+          <img class="img change-sz" [src]="lastShowMovie.imgNameSrc" alt="">
+          <div>
+            <span [ngStyle]="{'color': setRating(lastShowMovie.rating), 'font-size': '18px', 'font-weight': 'bold'}">{{lastShowMovie.rating}}</span>
+          </div>
+          <div>485219 оценок</div>
+          <p class="movie-title1">{{lastShowMovie.text2}}</p>
+        </div>
+        <div class="players-list">
+          <div class="child2">
+            <div>Озвучки</div>
+            <ul>
+              <li>Русский 5.1</li>
+              <li>Русский 5.1 (Кубик в Кубе)</li>
+              <li>Английский 5.1</li>
+            </ul>
+
+            <div>Субтитры</div>
+            <ul>
+              <li>Русские</li>
+              <li>Русский 5.1 (Кубик в Кубе)</li>
+              <li>Английский 5.1</li>
+            </ul>
+
+            <div>Оригинальное название</div>
+            <ul>
+              <li>{{lastShowMovie.name}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

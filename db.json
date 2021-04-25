@@ -1,0 +1,621 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "AlanDr",
+      "password": "12345",
+      "email": "nicos@gmail.com",
+      "firstName": "Alan",
+      "lastName": "Dren",
+      "photoUrl": "../../../assets/images/avatars/Kiba.jpg",
+      "myMovies": [
+        18,
+        19,
+        20,
+        21,
+        16,
+        17
+      ],
+      "favoriteMovie": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "subscribeEditorials": []
+    },
+    {
+      "id": 2,
+      "login": "Cake",
+      "password": "12345",
+      "email": "",
+      "firstName": "Thor",
+      "lastName": "Tom",
+      "photoUrl": "../../../assets/images/avatars/ava2.jpg",
+      "myMovies": [
+        18,
+        19,
+        20,
+        21,
+        16
+      ],
+      "favoriteMovie": [
+        11,
+        12
+      ],
+      "subscribeEditorials": []
+    },
+    {
+      "login": "Pie",
+      "password": "12345",
+      "email": "",
+      "firstName": "Jerry",
+      "lastName": "Tom",
+      "photoUrl": "../../../assets/images/avatars/avatar1.png",
+      "myMovies": [],
+      "favoriteMovie": [
+        1,
+        7
+      ],
+      "myEditorials": [],
+      "id": 3
+    },
+    {
+      "login": "nico10",
+      "password": "123",
+      "email": "",
+      "firstName": "Yerbo",
+      "lastName": "Pazyl",
+      "photoUrl": "../../../assets/images/avatars/avatar1.png",
+      "myMovies": [],
+      "favoriteMovie": [
+        1,
+        6
+      ],
+      "myEditorials": [],
+      "id": 4
+    },
+    {
+      "login": "yzybagdat@mail.ru",
+      "password": "bag123dat",
+      "email": "",
+      "firstName": "Bagdat",
+      "lastName": "Med",
+      "photoUrl": "../../../assets/images/avatars/avatar1.png",
+      "myMovies": [],
+      "favoriteMovie": [
+        16
+      ],
+      "myEditorials": [],
+      "id": 6
+    }
+  ],
+  "continueMovies": [
+    {
+      "id": 1,
+      "userId": 1,
+      "movieId": 1,
+      "watchTime": 60
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "movieId": 2,
+      "watchTime": 60
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "totalTime": 132,
+      "timeHour": "1 ceзон 12 из 12",
+      "imgSrc": "../../assets/images/movies/movie1.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_1.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m1.png",
+      "name": "Mahou Shoujo Madoka Magik",
+      "rating": 7.4,
+      "date": 2011,
+      "price": 699,
+      "discount": 100,
+      "genres": [
+        "fantasy",
+        "drama"
+      ],
+      "text": "Мадока довольна жизнью. Учась во втором классе средней школы, девчонка постоянно участвует в конкурсах и соревнованиях. ",
+      "text2": "Мадока довольна жизнью. Учась во втором классе средней школы, девчонка постоянно участвует в конкурсах и соревнованиях. Казалось, что нет никакого смысла ей задумываться о будущем, ведь все благоприятные обстоятельства давно гарантируют счастье и спокойствие. Однажды она видит подробный сон, в котором темноволосая барышня сражается с неизвестными чудовищами. Главная героиня аниме Девочка-волшебница Мадока Волшебство удивилась удивительной реалистичности сновидений. Никогда раньше ей не приходило в голову подобных сказочных образов. Внезапно ситуация серьезно усугубляется, когда в класс Мадоки переводят Хомуру. Она поразительно напоминает девочку из снов."
+    },
+    {
+      "id": 2,
+      "totalTime": 108,
+      "timeHour": "1 сезон 12 из 12",
+      "imgSrc": "../../assets/images/movies/movie2.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_2.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m2.png",
+      "name": "The Unlimited - Hyoubu Kyousuke",
+      "rating": 8.0,
+      "date": 2013,
+      "price": 599,
+      "discount": 100,
+      "genres": [
+        "fantasy",
+        "adventure"
+      ],
+      "text": "Кескэ предлагал создать специальную систему, которая позволит защитить эсперов от необузданной ярости простого человечества.",
+      "text2": "Кескэ предлагал создать специальную систему, которая позволит защитить эсперов от необузданной ярости простого человечества. Главный герой не получил никакой поддержки и был изгнан. Многие лидеры предпочитали искать мирное урегулирование конфликта, создавали условия для соглашений. Но простые люди, переполненные страхом, редко следовали приказам вышестоящих лиц, игнорировали договоренности. Это и спровоцировало появление мощного отряда «P.A.N.D.R.A». Кескэ Хебу стремился доказать невозможность развития двух разумных рас. Всегда будут войны и ненависть. Главный герой аниме Восхитительные дети: Безграничный решает, что первой миссией группировки станет разрушение особенной тюрьмы. Среди всех заключенных, он встречает Энди Хиномию."
+    },
+    {
+      "id": 3,
+      "totalTime": 3000,
+      "timeHour": "1 сезон 12 из 12",
+      "imgSrc": "../../assets/images/movies/movie3.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_3.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m3.webp",
+      "name": "SK8 the Infinity, SK Eight",
+      "rating": 8.6,
+      "date": 2021,
+      "price": 799,
+      "discount": 100,
+      "genres": [
+        "fantasy",
+        "adventure"
+      ],
+      "text": "Адаптация одноимённой манги про безумный спорт под названием «Скейт: Бесконечность» рассказывает про любителей скейтборда.",
+      "text2": "Главным героем является немного странный, но вполне отличный парень по имени Реки. Почему он ненормальный? Всё просто: он согласился участвовать в заброшенной шахте в гонках, да не в обычных, а на скейтах. Кажется, будто данная затея является безумием чистой воды, однако парня не останавливают подобные трудности. В скором времени выясняется, что таких любителей пощекотать нервишки существует достаточно большое количество. Но, в основном среди них безбашенные личности, встречаются различные разукрашенные личностей, а также хулиганы и вполне вероятно, даже преступники. Но, что здесь забыл такой парнишка, как центральный персонаж «Скейт: бесконечность»?"
+    },
+    {
+      "id": 4,
+      "totalTime": 1000,
+      "timeHour": "1 cезон 2 из 20",
+      "imgSrc": "../../assets/images/movies/movie4.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_4.jpg",
+      "imgNameSrc": "",
+      "name": "Fumetsu no Anata e",
+      "rating": 9.8,
+      "date": 2021,
+      "price": 900,
+      "discount": 100,
+      "genres": [
+        "fantasy",
+        "drama"
+      ],
+      "text": "Согласно сюжету аниме «Для тебя, Бессмертный», однажды человечество столкнулось со сверхъестественным существом, которое внезапно прибыло на землю из неизвестности.",
+      "text2": "Исключительной особенностью являлось то, что оно не могло умереть, умело принимать любую форму, в том числе и человека, и не испытывало никаких эмоций.\n\nПоначалу это была лишь сфера, непонятная и загадочная. После, увидев камень, приобрело его форму и через определенное время, когда температура начала снижаться, превратилось в мох. Позже со странным существом рядом лёг раненый волк, и конечно, перевоплощение состоялось в мгновение ока. Теперь сущность может передвигаться, поскольку обладает новым, более удобным телом"
+    },
+    {
+      "id": 5,
+      "totalTime": 90,
+      "timeHour": "4 Сезон 10 из 24",
+      "imgSrc": "../../assets/images/movies/movie5.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_5.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m5.png",
+      "name": "Nanatsu no Taizai",
+      "rating": 9.2,
+      "date": 2014,
+      "price": 799,
+      "discount": 100,
+      "genres": [
+        "fantasy",
+        "adventure"
+      ],
+      "text": "Третья дочь короля Лионеса отправляется в дальнюю дорогу, чтобы отыскать легендарных воинов. Королевство находится на краю уничтожения. ",
+      "text2": "Появились мистические демоны, чья сила превосходит лучших воинов. Постепенно она сталкивалась с трудностями, и едва живой доковыляла до трактира, где знакомиться с Милиодасом. В небольшом сражении с очередным рыцарем державы, девушка узнает, что владелец пивнушки — это тот самый предводитель сильнейшего отряда в аниме 7 смертных грехов.\n\nОт господина мелиодаса она узнает, что все члены бывшей команды разбросаны по всей державе. И он толком не понимает, где их искать. Из-за государственного переворота, Элизабет становится преступницей, и приравнивается к угрозе."
+    },
+    {
+      "id": 6,
+      "totalTime": 152,
+      "timeHour": "1 Сезон 12 из 12",
+      "imgSrc": "../../assets/images/movies/movie6.jpeg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_3.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m6.png",
+      "name": "Kemono Jihen",
+      "rating": 9.6,
+      "date": 2021,
+      "price": 499,
+      "discount": 100,
+      "genres": [
+        "detective",
+        "comedy"
+      ],
+      "text": "Основной специализацией главного героя аниме «Инцидент Кэмоно» является расследование различных преступлений.",
+      "text2": "К примеру, это может быть перебежавшая дорогу черная кошка, люди с пустыми ведрами, идущими навстречу, и подобная чертовщина. Основные события сконцентрированы не на рядовых расследованиях, а на действительно стоящих и интересных делах. Примеров тому множество: следователю пришлось отправиться в одну деревеньку, где местные жители жалуются на наличие потусторонних сущностей. Дело в том, что, поначалу стали пропадать домашние животные, а впоследствии и дикие звери. "
+    },
+    {
+      "id": 7,
+      "totalTime": 3000,
+      "timeHour": "1 Сезон 11 из 11",
+      "imgSrc": "../../assets/images/movies/movie7.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_7.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m7.png",
+      "name": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+      "rating": 9.8,
+      "date": 2021,
+      "price": 799,
+      "discount": 100,
+      "genres": [
+        "drama"
+      ],
+      "text": "Сюжет аниме под названием «Реинкарнация безработного: История о приключениях в другом мире» рассказывает, как молодому японцу постоянно не везет. ",
+      "text2": "Не очень приспособленный к суровым реалиям современности, избалованный родителями парень запутался и не знает, как жить своим умом и трудом. Похоронив папочку и маму, не привыкший думать о куске хлеба бездельник совсем потерялся. Отаку-лентяй — безработный, хоть ему уж стукнуло тридцать. Сирота решил срочно изменить свое бестолковое существование. Иного пути просто нет! Родня выгнала иждивенца из дома. Отныне он — не маменькин сыночек, и должен научиться заботиться о себе. "
+    },
+    {
+      "id": 8,
+      "totalTime": 3000,
+      "timeHour": "2 Сезон 11 из 11",
+      "imgSrc": "../../assets/images/movies/movie8.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_8.png",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m8.png",
+      "name": "Yakusoku no Neverland",
+      "rating": 9.6,
+      "date": 2019,
+      "price": 799,
+      "discount": 100,
+      "genres": [
+        "detective",
+        "horror"
+      ],
+      "text": "Аниме «Обещанный Неверленд» знакомит с главными героями. Эмма, Норман и Рэй — смышленые детишки в приюте. ",
+      "text2": "Все дети счастливо живут в пределах приюта, усердно учатся, играют с полной свободой на территории и мечтают о том дне, когда их наконец выберет семья и найдется новый дом. Радостные времена подходят к концу, когда юная Эмма и ее друг Норман решают последовать за маленькой Конни (которую отправили на усыновление), поскольку девочка уехала, забыл любимую игрушку."
+    },
+    {
+      "id": 9,
+      "totalTime": 3000,
+      "timeHour": "2 Сезон 24 из 24",
+      "imgSrc": "../../assets/images/movies/movie9.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_9.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m9.webp",
+      "name": "Enen no Shouboutai",
+      "rating": 9.4,
+      "date": 2019,
+      "price": 699,
+      "discount": 100,
+      "genres": [
+        "fantasy",
+        "adventure"
+      ],
+      "text": "Неожиданно обычное существование человечества начинает подвергаться неистовой стихии огня.",
+      "text2": "Люди без причины начали самовоспламеняться. Независимо от статуса, жизненных принципов или поведения — стихии все равно, позже подобные граждане получили название огневики. Жертвой испепеляющего пламени может стать каждый. Такие ситуации спровоцировали создание специальных отрядов пожарных. Они занимаются только ликвидацией огневиков, и упокоение их душ. С последующими поколениями, появлялись дети, что могли контролировать или создавать огонь"
+    },
+    {
+      "id": 10,
+      "totalTime": 3000,
+      "timeHour": "1 Сезон 10 из 10",
+      "imgSrc": "../../assets/images/movies/movie10.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_10.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m10.png",
+      "name": "The Owl House",
+      "rating": 9.5,
+      "date": 2020,
+      "price": 499,
+      "discount": 100,
+      "genres": [
+        "fantasy",
+        "comedy"
+      ],
+      "text": "Лус Наседа постоянно попадает в неприятности. Ее любопытство переходит все границы.",
+      "text2": "Какие бы не происходили в школе мероприятия, девушка умудрялась особенными видениями его испортить. Она обожает сказки и мистические истории о монстрах, чудовищах и волшебницах. Чрезмерное погружение в воображаемый мир взволновало мать главной героини аниме Совиный дом. Директор предлагает женщине отдать гиперактивную дочь в специальный летний лагерь, где Лус наверняка найдет друзей среди сверстников и меньше времени будет находиться в собственных иллюзиях."
+    },
+    {
+      "id": 11,
+      "totalTime": 3000,
+      "timeHour": "1 h 42 min",
+      "imgSrc": "../../assets/images/movies/movie11.webp",
+      "imgBigSrc": "../../assets/images/movie_details/movie15.webp",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m11.png",
+      "name": "Sora no Aosa o Shiru Hito yo",
+      "rating": 7.5,
+      "date": 2019,
+      "price": 799,
+      "discount": 100,
+      "genres": [
+        "anime",
+        "cartoon"
+      ],
+      "text": "Аои влюбляется в бывшего парня сестры, прибывшего из прошлого. Аниме о первой любви, которая случилась дважды",
+      "text2": "Родители Аои и Аканэ погибли 13 лет назад, и, чтобы заботиться о младшей сестре, Аканэ пришлось отказаться от планов переехать в Токио вместе со своим парнем Синносукэ. С тех пор Аои чувствует себя в долгу перед сестрой. Однажды известный исполнитель песен в жанре энка по имени Данкити приглашает Аои, только делающую первые шаги на музыкальном поприще, выступить на фестивале. В то же время Синнос…"
+    },
+
+    {
+      "id": 14,
+      "totalTime": 6170,
+      "timeHour": "",
+      "imgSrc": "../../assets/images/movies/movie14.webp",
+      "imgBigSrc": "../../assets/images/movie_details/movie7.webp",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m13.png",
+      "name": "Rick and Morty",
+      "rating": 8.9,
+      "date": 2013,
+      "price": 799,
+      "discount": 100,
+      "genres": [
+        "cartoon",
+        "comedy"
+      ],
+      "text": "Смешные и изобретательные приключения безумного гения и его внука. В озвучке Сыендука",
+      "text2": "В центре сюжета - школьник по имени Морти и его дедушка Рик. Морти - самый обычный мальчик, который ничем не отличается от своих сверстников. А вот его дедуля занимается необычными научными исследованиями и зачастую полностью неадекватен. Он может в любое время дня и ночи схватить внука и отправиться вместе с ним в межпространственные приключения с помощью построенной из разного хлама летающей та…"
+    },
+    {
+      "id": 15,
+      "totalTime": 6170,
+      "timeHour": "",
+      "imgSrc": "../../assets/images/movies/movie15.webp",
+      "imgBigSrc": "../../assets/images/movie_details/movie8.webp",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m14.png",
+      "name": "Gravity Falls",
+      "rating": 9.5,
+      "date": 2012,
+      "price": 699,
+      "discount": 100,
+      "genres": [
+        "cartoon",
+        "detective"
+      ],
+      "text": "Жуткие и невероятные каникулы близнецов Диппера и Мейбл в гостях у прадядюшки Стэна",
+      "text2": "История рассказывает о приключениях близнецов, брата и сестры Диппера и Мэйбл Пайнс, чьи летние планы отправляются в чулан, когда родители оправляют их к дальнему родственнику в тихий городок Гравити Фолз. Но так ли прост этот город, родственник и жители, и какие тайны ждут своих первооткрывателей?"
+    },
+    {
+      "id": 16,
+      "totalTime": 6170,
+      "timeHour": "2 h 4 min",
+      "imgSrc": "../../assets/images/movies/movie16.png",
+      "imgBigSrc": "../../assets/images/movie_details/movie16.webp",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m16.png",
+      "name": "Sen to Chihiro no kamikakushi",
+      "rating": 8.4,
+      "date": 2001,
+      "price": 599,
+      "discount": 90,
+      "genres": [
+        "feature film",
+        "cartoon"
+      ],
+      "text": "Девочка должна спасти своих родителей в мире духов. Шедевр Хаяо Миядзаки, фаворит анимационных рейтингов мира",
+      "text2": "Маленькая Тихиро вместе с мамой и папой переезжают в новый дом. Заблудившись по дороге, они оказываются в странном пустынном городе, где их ждет великолепный пир. Родители с жадностью набрасываются на еду и к ужасу девочки превращаются в свиней, став пленниками злой колдуньи Юбабы, властительницы таинственного мира древних богов и могущественных духов. Теперь, оказавшись одна среди магических …"
+    },
+    {
+      "id": 17,
+      "totalTime": 6170,
+      "timeHour": "2 h 7 min",
+      "imgSrc": "../../assets/images/movies/movie17.png",
+      "imgBigSrc": "../../assets/images/movie_details/movie17.webp",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m17.png",
+      "name": "Mononoke-hime",
+      "rating": 8.2,
+      "date": 1997,
+      "price": 799,
+      "discount": 90,
+      "genres": [
+        "feature film",
+        "adventure"
+      ],
+      "text": "Заколдованный принц и лесная принцесса борются с древним демоном и его рабами. Аниме-блокбастер Хаяо Миадзаки",
+      "text2": "Юный принц Аситака, убив вепря, навлек на себя смертельное проклятие. Старая знахарка предсказала ему, что только он сам способен изменить свою судьбу. И отважный воин отправился в опасное путешествие. Так он оказался в загадочной стране, где люди под предводительством злой госпожи Эбоси воевали с обитателями леса: духами, демонами и гигантскими существами, каких Аситака раньше никогда не видел…"
+    },
+    {
+      "id": 18,
+      "totalTime": 6170,
+      "timeHour": "1 h 57 min",
+      "imgSrc": "../../assets/images/movies/movie18.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie18.webp",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m18.png",
+      "name": "Kaze no tani no Naushika",
+      "rating": 8.1,
+      "date": 1984,
+      "price": 799,
+      "discount": 90,
+      "genres": [
+        "feature film"
+      ],
+      "text": "В далеком будущем храбрая девушка спасает планету. Экологический фэнтези-постапокалипсис раннего Хаяо Миядзаки",
+      "text2": "В будущем человечество, столетиями безоглядно эксплуатировавшее природу, пало жертвой своей гордыни. Землю постигла ужасная экологическая катастрофа, процветающие когда-то промышленные цивилизации обратились в прах, а поверхность планеты покрыло гигантское море Леса, испускающее в атмосферу ядовитые споры растений. Оставшимся в живых людям приходится жить в тени Леса и его чудовищных насекомоо…"
+    },
+    {
+      "id": 19,
+      "totalTime": 6170,
+      "timeHour": "1 h 54 min",
+      "imgSrc": "../../assets/images/movies/movie19.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie19.webp",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m19.png",
+      "name": "Hauru no ugoku shiro",
+      "rating": 8.3,
+      "date": 2004,
+      "price": 799,
+      "discount": 90,
+      "genres": [
+        "feature film"
+      ],
+      "text": "Злая колдунья превращает юную Софи в старушку. Волшебная сказка о силе любви по мотивам книги Дианы Уинн Джонс",
+      "text2": "Злая ведьма заточила 18-летнюю Софи в тело старухи. Девушка-бабушка бежит из города куда глаза глядят и встречает удивительный дом на ножках, где знакомится с могущественным волшебником Хаулом и демоном Кальцифером. Кальцифер должен служить Хаулу по договору, условия которого он не может разглашать. Девушка и демон решают помочь друг другу избавиться от злых чар."
+    },
+
+    {
+      "id": 22,
+      "totalTime": 137,
+      "timeHour": "1 сезон 220 ИЗ 220",
+      "imgSrc": "../../assets/images/movies/movie22.webp",
+      "imgBigSrc": "../../assets/images/movie_details/movie_22.webp",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m22.png",
+      "img3": "assets/images/movies/movie22.webp",
+      "name": "Naruto",
+      "rating": 9.7,
+      "date": 2002,
+      "price": 1990,
+      "discount": 90,
+      "genres": [
+        "fantasy",
+        "marvel"
+      ],
+      "text": "Познакомьтесь с Наруто Узумаки – юным ниндзя, которому предстоит пройти долгий путь к своей мечте.",
+      "text2": "Наруто Удзумаки – очень разговорчивый, шумный, непоседливый и уверенный в себе ниндзя-подросток. Ему предстоит пройти немало заданий и препятствий, чтобы стать настоящим ниндзя и легко справляться в дальнейшем с разными миссиями и сражениями. Хобби этого светловолосого мальчика – пробовать самые разные виды лапши, а потом сравнивать их."
+    },
+    {
+      "id": 23,
+      "totalTime": 132,
+      "timeHour": "2 сезон 500 из 500",
+      "imgSrc": "../../assets/images/movies/movie23.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_23.png",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m22.png",
+      "img3": "assets/images/movies/movie23.jpg",
+      "name": "Naruto season 2",
+      "rating": 8.7,
+      "date": 2003,
+      "price": 1990,
+      "discount": 90,
+      "genres": [
+        "fantasy",
+        "marvel"
+      ],
+      "text": "Продолжение полюбившегося многим сериала о приключениях юного ниндзя Наруто.",
+      "text2": "Прошло два года с финала первой части, герои изменились и стали сильнее. Изменился и формат – «Ураганные Хроники» куда серьёзнее и мрачнее оригинала. Глубокие переживания персонажей и закрученный сюжет заставляют не отлипать от экранов на протяжении всего хронометража. По-настоящему титанический труд аниматоров, композиторов и сценаристов. Неповторимая атмосфера, чарующая музыка, приятный стиль, смысловое наполнение и, конечно же, эффектные сражения – вот из чего соткан лучший сёнен за всю историю жанра."
+    },
+    {
+      "id": 24,
+      "totalTime": 143,
+      "timeHour": "2 h 23 min",
+      "imgSrc": "../../assets/images/movies/movie24.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_24.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m22.png",
+      "img3": "../../assets/images/movies/movie24.jpg",
+      "name": "Naruto season 3",
+      "rating": 8.5,
+      "date": 2005,
+      "price": 1990,
+      "discount": 90,
+      "genres": [
+        "fantasy",
+        "marvel"
+      ],
+      "text": "Встречайте новое поколение ниндзя!",
+      "text2": "История Наруто подошла к концу, он исполнил свою мечту и стал Хокаге. Теперь в центре событий его сын по имени Боруто, который избрал для себя совсем иной путь. Однако для начала ему следует завести друзей и таки выпуститься из Академии, чтобы стать настоящим ниндзя. Новая история – наследие «Наруто»!"
+    },
+    {
+      "id": 25,
+      "totalTime": 176,
+      "timeHour": "2 h 54 min",
+      "imgSrc": "../../assets/images/movies/movie25.jpg",
+      "imgBigSrc": "../../assets/images/movie_details/movie_25.jpg",
+      "imgNameSrc": "../../assets/images/mivoes_logo_png/m22.png",
+      "img3": "../../assets/images/movies/movie25.jpg",
+      "name": "the last: naruto the movie",
+      "rating": 7.6,
+      "date": 2015,
+      "price": 1990,
+      "discount": 90,
+      "genres": [
+        "fantasy",
+        "marvel"
+      ],
+      "text": "Two years since the peace established in the aftermath of the Fourth Great Ninja War, the Sixth Hokage Kakashi Hatake notices that the moon is nearing Earth and will soon collide with it. ",
+      "text2": "The crisis is caused by Toneri Otsutsuki, a descendant of the Sage of Six Paths' twin brother Hamura Otsutsuki, who is determined to fulfill Hamura's promise to judge humanity for their millennium-long perversion of the Sage's teachings into ninjutsu. During the Rinne Festival, Hinata Hyuga knits a red scarf similar to the one Naruto wore when they first met in order to finally confess her feelings for him with Sakura Haruno offering her assistance. Hinata becomes doubtful as Naruto receives a variety of gifts from others, including another scarf in addition to being sought after by other female admirers..."
+    }
+  ],
+  "editorials": [
+    {
+      "id": 1,
+      "userId": 1,
+      "photoUrl": "../../../assets/images/editorial/edi1.jpg",
+      "title": "Naruto",
+      "movieIds": [
+        22,
+        23,
+        24,
+        25,
+        -1,
+        -1
+      ],
+      "subscriber": [
+        2,
+        3,
+        4,
+        null,
+        null,
+        null,
+        6
+      ],
+      "text": "text text textedsjfljsdlgjv njd",
+      "texts": [
+        "text - 1",
+        "text - 2",
+        "text - 3",
+        "text text - 4 eee",
+        "dfsflksjfjsl",
+        ""
+      ],
+      "price": 0
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "photoUrl": "../../../assets/images/editorial/StudioGhibli.jpg",
+      "title": "Hayao Miyazaki",
+      "movieIds": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "subscriber": [
+        3,
+        4,
+        null
+      ],
+      "texts": [
+        "text - 1",
+        "text - 2",
+        "text - 3",
+        "text - 4"
+      ],
+      "price": 0
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "photoUrl": "../../../assets/images/editorial/edi2.png",
+      "title": "Adventure",
+      "movieIds": [
+        2,
+        3,
+        5,
+        9
+      ],
+      "subscriber": [
+        2,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null
+      ],
+      "texts": [
+        "text - 1"
+      ],
+      "price": 0
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "movieIds": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "colors": [
+        "rgb(33,69,117)",
+        "rgb(131,26,26)",
+        "rgb(0,0,0)",
+        "rgb(0,0,0)"
+      ],
+      "line": [
+        "linear-gradient(90deg, rgba(33,69,117,1) 0%, rgba(142,51,51,1) 29%, rgba(31,44,73,1) 90%)",
+        "linear-gradient(90deg, rgba(131,26,26,1) 0%, rgba(116,29,29,1) 29%, rgba(43,58,92,1) 90%)",
+        "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(202,141,28,1) 29%, rgba(9,9,8,1) 90%)",
+        "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(160,86,160,1) 29%, rgba(0,0,0,1) 90%)"
+      ]
+    }
+  ]
+}

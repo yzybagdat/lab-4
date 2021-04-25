@@ -1,0 +1,7 @@
+<div *ngIf="this.myMovies.length == 0">
+  <h2 [style]="{'text-align': 'center'}">Your list is empty</h2>
+</div>
+
+<div class="flex">
+  <app-carousel-card [routerLink]="['/selection/movie', movie.id]" *ngFor="let movie of myMovies" [movie]="movie"></app-carousel-card>
+</div>

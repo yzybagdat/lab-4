@@ -1,0 +1,6 @@
+<main>
+  <h1>{{ this.genre | uppercase }}</h1>
+  <div class="flex-box">
+    <app-carousel-card [routerLink]="['../../movie', movie.id]" [style]="{'margin-bottom': '15px'}" *ngFor="let movie of movies" [movie]="movie"></app-carousel-card>
+  </div>
+</main>

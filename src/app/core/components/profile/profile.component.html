@@ -1,0 +1,41 @@
+<main>
+  <div class="wrapper">
+    <div class="profile-flex-box">
+
+      <div class="profile-title-box">
+
+        <div class="profile-image">
+          <img [src]="user.photoUrl" alt="profile image">
+        </div>
+        <p>{{user.firstName}} {{user.lastName}}</p>
+        <p>@{{user.login}}</p>
+        <div class="profile-subs-flex">
+          <div class="child r">
+           <p> <strong routerLink="/editorial/1/create">Create playlist</strong></p>
+          </div>
+        </div>
+        <div class="action-log-out">
+          <button (click)="logOutUser()">Log out</button>
+        </div>
+      </div>
+
+      <div class="profile-basic-info">
+
+        <div class="profile-nav-bar">
+          <mat-chip-list>
+            <mat-chip routerLink="./" routerLinkActive="active">Continue watching</mat-chip>
+            <mat-chip routerLink="./my-movies" routerLinkActive="active">My movies</mat-chip>
+            <mat-chip routerLink="./my-favorite-movies" routerLinkActive="active">My favorite movies</mat-chip>
+            <mat-chip routerLink="./my-editorials" routerLinkActive="active">My playlists</mat-chip>
+          </mat-chip-list>
+        </div>
+
+        <div class="profile-info-box">
+          <router-outlet></router-outlet>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</main>

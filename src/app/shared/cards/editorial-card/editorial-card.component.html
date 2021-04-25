@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="flex-box">
+
+    <div class="card-img">
+      <img [routerLink]="['/editorial', card.id]" src="{{card.photoUrl}}" alt="">
+    </div>
+
+    <div class="card-text">
+      <div class="name">{{user.login | uppercase}}</div>
+      <div class="card-title">{{card.title}}</div>
+<!--      <div class="card-price">{{card.price | currency: 'KZ'}}</div>-->
+    </div>
+
+    <div class="card-btn">
+      <button class="add-btn" (click)="addSybs()">
+        Add
+      </button>
+    </div>
+
+  </div>
+</div>

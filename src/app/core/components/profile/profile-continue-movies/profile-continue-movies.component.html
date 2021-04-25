@@ -1,0 +1,7 @@
+<div *ngIf="this.continueMovies.length == 0">
+  <h2 [style]="{'text-align': 'center'}">Your list is empty</h2>
+</div>
+
+<div class="flex">
+  <app-card *ngFor="let movie of continueMovies" [continueMovie]="movie" (deleteMoviesInHistoryWatching)="deleteMovieInContinueMovies($event)"></app-card>
+</div>

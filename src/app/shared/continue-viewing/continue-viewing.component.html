@@ -1,0 +1,7 @@
+<div class="box" *ngIf="movies.length != 0">
+  <h2>Continue watching</h2>
+
+  <div class="movies">
+    <app-card *ngFor="let movie of movies" [continueMovie]="movie" (deleteMoviesInHistoryWatching)="deleteInArr($event)"></app-card>
+  </div>
+</div>

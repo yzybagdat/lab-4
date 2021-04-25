@@ -1,0 +1,70 @@
+<main>
+  <div class="wrapper">
+
+    <div class="banner-box">
+
+      <img [src]="editor.photoUrl" [alt]="editor.title + 'banner image'">
+
+      <div class="fon">
+
+        <div class="btn-user">
+          <img [src]="user.photoUrl" alt="user avatar image">
+          <span>{{user.firstName + ' ' + user.lastName}}</span>
+        </div>
+
+        <h1>{{editor.title}}</h1>
+
+        <button class="btn-dev btn-sub" *ngIf="canDo()" (click)="doSubs()">Subscribe</button>
+        <button class="btn-dev btn-un" *ngIf="!canDo() && user.login !== getAuthLogin()" (click)="doUnSubs()">Unsubscribe</button>
+        <button class="btn-dev btn-edit" *ngIf="user.login === getAuthLogin()" (click)="navigateToEdit()">Edit</button>
+      </div>
+    </div>
+
+    <div class="del">
+      <div class="block">
+        <div class="num">1</div>
+        <div class="text">movie</div>
+      </div>
+
+      <div class="block">
+        <div class="num">{{editor.subscriber.length | converternumber}}</div>
+        <div class="text">subscribes</div>
+      </div>
+    </div>
+
+    <div class="editorial-box">
+
+      <div class="editorial-text">
+        {{editor.text}}
+      </div>
+
+      <div class="editorial-movies">
+
+        <div class="movie" *ngFor="let mov of movies; let i = index">
+          <div class="movie-text">
+            {{editor.texts[i]}}
+          </div>
+
+          <div class="card-movie" [routerLink]="['../../selection/movie', movies[i].id]">
+            <div class="movie-img">
+              <img [src]="movies[i].imgSrc" alt="Movie image">
+            </div>
+
+            <div class="movie-info">
+              <h3>{{movies[i].name}}</h3>
+              <p><span *ngFor="let genre of movies[i].genres">{{genre}}</span></p>
+              <p><span>{{movies[i].date}}</span></p>
+              <span class="rating">
+                {{movies[i].rating}}
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</main>

@@ -1,0 +1,60 @@
+.carousel-card {
+  //margin-right: 30px;
+  //border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.content:hover {
+  //-webkit-box-shadow: 0px 15px 35px 0px rgba(29, 35, 42, 1);
+  //-moz-box-shadow: 0px 15px 35px 0px rgba(29, 35, 42, 1);
+  //box-shadow: 0px 15px 35px 0px rgba(29, 35, 42, 1);
+
+  transform: scale(1.05);
+}
+
+.content {
+  max-width: 200px;
+  max-height: 250px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  transform-origin: center;
+  transition: all 200ms ease-in-out;
+  border: 2px solid transparent;
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .not-free {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-sizing: border-box;
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .free {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-sizing: border-box;
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ec7822;
+  }
+}
+
+.is-click {
+  border: 2px solid #fff;
+}
+

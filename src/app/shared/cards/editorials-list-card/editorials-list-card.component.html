@@ -1,0 +1,28 @@
+<div class="card">
+
+  <div class="card-img" [ngStyle]="{'background-image': 'url(' + editor.photoUrl + ')'}">
+
+    <div class="black-fon">
+      <p>{{editor.title | titlecase}}</p>
+    </div>
+
+  </div>
+
+  <div class="card-footer">
+
+    <div class="logo-box">
+
+      <div class="logo-img">
+        <img [src]="user.photoUrl" alt="Marvel logo img">
+      </div>
+      <span>{{user.login}}</span>
+
+    </div>
+
+    <div class="actions">
+      <span><mat-icon> local_movies</mat-icon>{{editor.movieIds.length}}</span>
+      <span style="margin-left: 10px"><mat-icon>supervisor_account</mat-icon>{{editor.subscriber.length | converternumber}}</span>
+    </div>
+
+  </div>
+</div>

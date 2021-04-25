@@ -1,0 +1,24 @@
+.box {
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding-left: 72px;
+}
+
+.movies {
+  display: flex;
+  max-width: 1000px;
+  max-height: 1000px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  transform-origin: center;
+  transition: all 200ms ease-in-out;
+  border: 2px solid transparent;
+
+  app-card {
+    margin-right: 30px;
+    width: 100%;
+    border-radius: 12px;
+  }
+}

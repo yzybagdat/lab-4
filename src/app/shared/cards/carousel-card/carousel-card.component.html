@@ -1,0 +1,7 @@
+<div class="carousel-card">
+  <div class="content" [ngClass]="{'is-click': click}">
+    <img [src]="movie.imgSrc" [alt]="movie.name + 'image'">
+    <span class="not-free" *ngIf="free" [ngStyle]="{ 'background-color': rating }">{{movie.rating}}</span>
+    <span class="free" *ngIf="!free">{{movie.price | discountvalue: movie.discount | currency: 'KZ'}}</span>
+  </div>
+</div>

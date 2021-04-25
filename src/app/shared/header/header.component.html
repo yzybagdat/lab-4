@@ -1,0 +1,33 @@
+<header>
+  <div class="logo">
+    <img routerLink="/" src="../../../assets/images/amaiLOGO-1.png" alt="NeKorem image logo">
+  </div>
+
+  <nav *ngIf="!clickSearch">
+    <a class="nav-link" routerLink="/home" routerLinkActive="is-active">Home</a>
+    <a class="nav-link" routerLink="/shop" routerLinkActive="is-active">Shop</a>
+    <a class="nav-link" routerLink="/editorial" routerLinkActive="is-active">Playlist</a>
+    <a class="nav-link" [routerLink]="['/catalog', 'all']" routerLinkActive="is-active">Catalog</a>
+    <button mat-icon-button aria-label="search btn" class="search-btn" (click)="clickSearch = !clickSearch">
+      <mat-icon>search</mat-icon>
+    </button>
+  </nav>
+
+  <form *ngIf="clickSearch" (keypress)="doSearch($event)">
+    <input type="text" [(ngModel)]="input" placeholder="Films and serial" name="input">
+    <button mat-icon-button aria-label="close btn" class="close-btn" (click)="clickSearch = !clickSearch">
+      x
+    </button>
+  </form>
+
+  <div class="actions">
+      <a *ngIf="isAuth()" class="nav-profile-link" routerLink="/profile">
+        <img [src]="getAvatar()" alt="profile avatar image">
+      </a>
+  </div>
+
+  <div *ngIf="!isAuth() && navbarService.visible" class="actions-v2">
+    <a routerLink="/login">Log in</a>
+    <a href="/sign-up">Sign up</a>
+  </div>
+</header>

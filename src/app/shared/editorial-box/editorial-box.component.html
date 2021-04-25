@@ -1,0 +1,21 @@
+<div class="editorial-carousel">
+  <button class="left" (click)="prevMovie()">
+    <mat-icon class="icon" aria-hidden="false" aria-label="keyboard_arrow_left">keyboard_arrow_left</mat-icon>
+  </button>
+  <div class="flex">
+
+      <div class="movie" [routerLink]="['/selection/movie', movie.id]" *ngFor="let movie of movies; let i = index" [ngStyle]="{'transform': 'translateX(-' + total + '%)', 'background-color': banner.colors[i], 'background': banner.line[i]}">
+        <div class="img">
+          <img [src]="movie.img3" [alt]="movie.name + 'image'">
+        </div>
+        <div class="texts">
+          <p class="title">{{movie.name}}</p>
+          <p>{{movie.text2}}</p>
+        </div>
+      </div>
+
+  </div>
+  <button class="right" (click)="nextMovie()">
+    <mat-icon class="icon" aria-hidden="false" aria-label="keyboard_arrow_right">keyboard_arrow_right</mat-icon>
+  </button>
+</div>

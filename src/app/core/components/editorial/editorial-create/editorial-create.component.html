@@ -1,0 +1,54 @@
+<main>
+  <div class="wrapper">
+
+    <div class="content">
+
+      <h1>New Editor</h1>
+
+      <form [formGroup]="formEditor" (ngSubmit)="save()">
+
+        <label>Title:
+          <input type="text" formControlName="title" placeholder="input title" [ngClass]="{'invalid': this.formEditor.get('title').invalid}" required>
+        </label>
+
+        <label>Image url:
+          <input type="text" formControlName="photoUrl" placeholder="input image url" [ngClass]="{'invalid': this.formEditor.get('photoUrl').invalid}" required>
+        </label>
+
+        <label>Image url:
+          <textarea type="text" formControlName="text" placeholder="input text" [ngClass]="{'invalid': this.formEditor.get('text').invalid}" required></textarea>
+        </label>
+
+        <div formArrayName="movieIds">
+          <h3>Movies</h3>
+
+          <div *ngFor="let movieId of movieIds.controls; let mi = index">
+            <label>
+              MovieId - {{mi}}:
+              <input type="number" [formControlName]="mi" [ngClass]="{'invalid': this.movieIds.controls[mi].invalid}" required>
+            </label>
+          </div>
+
+          <button class="add" (click)="addMovie()">Add movie</button>
+          <button class="red" (click)="deleteMovie()">Delete movie</button>
+        </div>
+
+        <div formArrayName="texts">
+          <h3>Texts</h3>
+
+          <div *ngFor="let text of texts.controls; let ti = index">
+            <label>
+              Text - {{ti}}:
+              <textarea [formControlName]="ti" [ngClass]="{'invalid': this.texts.controls[ti].invalid}" required></textarea>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="add" [ngClass]="{'disabled-style': this.formEditor.invalid}" [disabled]="this.formEditor.invalid">Save</button>
+      </form>
+
+    </div>
+
+
+  </div>
+</main>

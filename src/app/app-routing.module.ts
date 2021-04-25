@@ -1,25 +1,51 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import {HomeComponent} from './core/components/home/home.component';
+import {CatalogComponent} from './core/components/catalog/catalog.component';
+import {ErrorPageComponent} from './shared/error-page/error-page.component';
+import {AuthStatusGuard} from './core/guards/auth-status.guard';
+import {LoginComponent} from './core/components/login/login.component';
+import {NavBarGuard} from './core/guards/nav-bar.guard';
+import {LoginPageGuard} from './core/guards/login-page.guard';
+import {ProfilePageChildCompAccessGuard} from './core/guards/profile-page-child-comp-access.guard';
+import {SignUpComponent} from './core/components/sign-up/sign-up.component';
 
-import { HomepageComponent } from './homepage/homepage.component';
-import { CatalogpageComponent } from './catalogpage/catalogpage.component';
-import { NewspageComponent } from './newspage/newspage.component';
-import { ProductComponent} from './product/product.component'
-import { AuthGuardService } from './route-guards/auth-guard.service';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register.component';
-import { DeactivateGuard } from './decativate.guard';
 
 const routes: Routes = [
- { path: '', component: HomepageComponent },
-    { path: 'login', component:LoginComponent},
-    { path: 'catalogpage', component: CatalogpageComponent },
-    { path: 'newspage', component: NewspageComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent, canDeactivate:[DeactivateGuard] },
-    { path: 'product', component: ProductComponent, canActivate : [AuthGuardService] },
-    // otherwise redirect to home
-    { path: '**', redirectTo: '' }
+  { path: 'home', component: HomeComponent },
+  {
+    path: 'selection',
+    loadChildren: () => import('./core/modules/movie/movie.module').then(m => m.MovieModule)
+  },
+  {
+    path: 'shop',
+    loadChildren: () => import('./core/modules/shop/shop.module').then(m => m.ShopModule)
+  },
+  {
+    path: 'editorial',
+    loadChildren: () => import('./core/modules/editorial/editorial.module').then(m => m.EditorialModule)
+  },
+  { path: 'catalog/:type', component: CatalogComponent },
+  {
+    path: 'profile',
+    loadChildren: () => import('./core/modules/profile/profile.module').then(m => m.ProfileModule),
+    canActivate: [AuthStatusGuard],
+    canActivateChild: [ProfilePageChildCompAccessGuard],
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+    canActivate: [LoginPageGuard],
+    canDeactivate: [NavBarGuard]
+  },
+  {
+    path: 'sign-up',
+    component: SignUpComponent,
+    canActivate: [LoginPageGuard],
+    canDeactivate: [NavBarGuard]
+  },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: ErrorPageComponent}
 ];
 
 @NgModule({

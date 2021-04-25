@@ -1,0 +1,22 @@
+<main>
+  <div class="wrapper">
+    <div class="login-box">
+
+      <h1>Sign in to NeKorem</h1>
+
+      <div class="login-body">
+        <h2>Log in</h2>
+        <div class="form-body">
+          <form [formGroup]="loginForm" (ngSubmit)="submit()">
+            <input type="text" formControlName="login" placeholder="Login">
+            <input type="password" formControlName="password" placeholder="Password">
+            <p *ngIf="validUser !== undefined && validUser === false">Login or password is not correct!</p>
+            <button type="submit" [disabled]="loginForm.disabled">Sign in</button>
+          </form>
+
+        </div>
+      </div>
+      <a routerLink="/sign-up">Create new account</a>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,19 @@
+.pay-btn, .cancel-btn {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pay-btn {
+  background-color: #46c16d;
+  margin-left: 20px;
+}
+
+.cancel-btn {
+  background-color: #ec2427;
+  //margin-left: 20px;
+}
+

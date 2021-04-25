@@ -1,0 +1,26 @@
+main {
+  width: 100%;
+  box-sizing: border-box;
+  color: whitesmoke;
+  overflow: hidden;
+  background-color: darkgray;
+
+  h2 {
+    font-size: 20px;
+    line-height: 16px;
+  }
+  padding-bottom: 30px;
+}
+
+
+.content {
+  .box {
+    width: 644px;
+    margin: auto;
+  }
+}
+
+.title {
+  margin: 50px 0;
+}
+
