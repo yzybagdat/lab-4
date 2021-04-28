@@ -105,6 +105,12 @@
       "userId": 1,
       "movieId": 2,
       "watchTime": 60
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "movieId": 10,
+      "watchTime": 30
     }
   ],
   "movies": [

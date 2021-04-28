@@ -1,16 +1,9 @@
 <main>
-  <div class="content">
-    <div class="box">
 
-      <div class="title">
-        <h2>Movies</h2>
-      </div>
+  <app-carousel [url]="'/selection/genre'" [movies]="inputData1" [genre]="genres[0]" [checkGenre]="status" (getGenre)="checkGenreF($event)"></app-carousel>
+  <app-carousel [url]="'/selection/genre'" [movies]="inputData2" [genre]="genres[1]" [checkGenre]="status" (getGenre)="checkGenreF($event)"></app-carousel>
 
-      <div class="cards-box">
-        <app-carousel-card [routerLink]="['../../selection/movie', movie.id]" [movie]="movie" *ngFor="let movie of movies"></app-carousel-card>
-        <app-carousel-card *ngFor="let card of movies" [movie]="movie"></app-carousel-card>
-      </div>
+  <app-carousel [url]="'/selection/genre'" [movies]="inputData3" [genre]="genres[2]" [checkGenre]="status" (getGenre)="checkGenreF($event)"></app-carousel>
+  <app-carousel [url]="'/selection/genre'" [movies]="inputData4" [genre]="genres[3]" [checkGenre]="status" (getGenre)="checkGenreF($event)"></app-carousel>
 
-    </div>
-  </div>
 </main>
