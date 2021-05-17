@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/amaiTV",
+            "outputPath": "dist/ne-korem",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "amaiTV:build"
+            "browserTarget": "ne-korem:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "amaiTV:build:production"
+              "browserTarget": "ne-korem:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "amaiTV:build"
+            "browserTarget": "ne-korem:build"
           }
         },
         "test": {
@@ -116,18 +116,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "amaiTV:serve"
+            "devServerTarget": "ne-korem:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "amaiTV:serve:production"
+              "devServerTarget": "ne-korem:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "amaiTV",
+  "defaultProject": "ne-korem",
   "cli": {
     "analytics": "716e1fa7-e747-49cb-bd90-692024787c67"
   }
